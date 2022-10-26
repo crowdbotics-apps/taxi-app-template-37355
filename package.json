@@ -26,6 +26,7 @@
     "@screens/notifications": "file:./screens/notifications/",
     "@screens/onboarding": "file:./screens/onboarding/",
     "@screens/privacy-policy": "file:./screens/privacy-policy/",
+    "@screens/settings": "file:./screens/settings/",
     "@screens/support-send-feedback": "file:./screens/support-send-feedback/",
     "@screens/upload-media": "file:./screens/upload-media/",
     "axios": "^0.21.1",
