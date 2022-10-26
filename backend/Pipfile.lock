@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "aaa82f5536e82ec4ec7cfe9d4f63738b8dccced6a218330dab0b9a0a61970ede"
+            "sha256": "783088ccbb5787a9d2654c5818a1df90edfa0cd49b204ca82455f0eb213df5a7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -55,6 +55,10 @@
             ],
             "markers": "python_version ~= '3.7'",
             "version": "==5.2.0"
+        },
+        "cb-django-social-auth": {
+            "editable": true,
+            "path": "./modules/django_social_auth"
         },
         "cb-terms-and-conditions": {
             "editable": true,

@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+cb_django_social_auth.egg-info/PKG-INFO
+cb_django_social_auth.egg-info/SOURCES.txt
+cb_django_social_auth.egg-info/dependency_links.txt
+cb_django_social_auth.egg-info/top_level.txt
+social_auth/__init__.py
+social_auth/apps.py
+social_auth/serializers.py
+social_auth/urls.py
+social_auth/views.py
