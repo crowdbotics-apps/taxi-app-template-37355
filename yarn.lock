@@ -1028,7 +1028,7 @@
 "@modules/maps@file:./modules/maps":
   version "1.0.0"
 
-"@modules/push-notifications@file:./modules/push-notifications/":
+"@modules/push-notifications@file:./modules/push-notifications":
   version "1.0.0"
 
 "@modules/social-login@file:./modules/social-login":
@@ -1268,6 +1268,9 @@
     redux "^4.1.2"
     redux-thunk "^2.4.1"
     reselect "^4.1.5"
+
+"@screens/notifications@file:./screens/notifications/":
+  version "1.0.0"
 
 "@screens/onboarding@file:./screens/onboarding":
   version "1.0.0"
