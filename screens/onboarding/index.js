@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, TouchableHighlight, StyleSheet } from "react-native";
-
 const sliderData = [{
   heading: "Lorem ipsum",
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.tortor lectus tempus lacus."
@@ -13,18 +12,17 @@ const sliderData = [{
 }];
 
 const Onboarding = () => {
-  return (
-    <Slider data={sliderData} onFinish={() => {}}/>
-  );
+  return <Slider data={sliderData} onFinish={() => {}} />;
 };
 
 export default Onboarding;
 
-const Slider = (props) => {
+const Slider = props => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleOnPress = () => {
     const tmpCurrentSlide = currentSlide + 1;
+
     if (tmpCurrentSlide === props.data.length) {
       props.onFinish();
       return;
@@ -33,8 +31,7 @@ const Slider = (props) => {
     setCurrentSlide(tmpCurrentSlide);
   };
 
-  return (
-    <View style={styles.container}>
+  return <View style={styles.container}>
       <View style={styles.onboardingArea}></View>
       <View style={styles.topHead}>
         <Text style={styles.mainHeading}>{props.data[currentSlide].heading}</Text>
@@ -50,8 +47,7 @@ const Slider = (props) => {
       </View>
       {currentSlide > 0 && <TouchableOpacity onPress={props.onFinish}><Text style={styles.skipText}>Skip</Text></TouchableOpacity>}
 
-    </View>
-  );
+    </View>;
 };
 
 const styles = StyleSheet.create({
@@ -84,7 +80,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     height: "10%"
-
   },
   selectedDot: {
     height: 10,
@@ -112,19 +107,19 @@ const styles = StyleSheet.create({
   }
 });
 
-const Button = (props) => {
-  return (
-    <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
+const Button = props => {
+  return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
       <View style={[btnStyles.button, {
-        backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
-        height: props.height ? props.height : 49,
-        borderWidth: props.borderWidth ? props.borderWidth : 0,
-        borderColor: props.borderColor ? props.borderColor : "#000000"
-      }]}>
-        <Text style={[btnStyles.text, { color: props.color ? props.color : "#ffffff" }]}>{props.children}</Text>
+      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
+      height: props.height ? props.height : 49,
+      borderWidth: props.borderWidth ? props.borderWidth : 0,
+      borderColor: props.borderColor ? props.borderColor : "#000000"
+    }]}>
+        <Text style={[btnStyles.text, {
+        color: props.color ? props.color : "#ffffff"
+      }]}>{props.children}</Text>
       </View>
-    </TouchableHighlight>
-  );
+    </TouchableHighlight>;
 };
 
 const btnStyles = StyleSheet.create({

@@ -10,16 +10,9 @@ const Maps = () => {
     latitudeDelta: 0.0922,
     longitudeDelta: 0.0421
   };
-
-  return (
-    <View style={styles.view}>
-      <MapView
-        provider={PROVIDER_GOOGLE}
-        style={styles.map}
-        initialRegion={region}
-      />
-    </View>
-  );
+  return <View style={styles.view}>
+      <MapView provider={PROVIDER_GOOGLE} style={styles.map} initialRegion={region} />
+    </View>;
 };
 
 export default {
